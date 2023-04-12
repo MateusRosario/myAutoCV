@@ -27,15 +27,10 @@ jobs:
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
       - name: move en cv
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE-ENG }}.pdf ./github_artifacts/
-      - name: Upload pt pdf as artifact
+      - name: Upload pdfs as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.FILE }}.pdf
-          path: ./github_artifacts
-      - name: Upload en pdf as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ env.FILE-ENG }}.pdf
+          name: pdfs
           path: ./github_artifacts
   deploy:
     needs: [build]
