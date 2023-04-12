@@ -9,6 +9,7 @@ jobs:
       # Edit here with the names of your latex file and directory (can use ".")
       DIR: .
       FILE: cv
+      FILE-ENG: cv-en
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
@@ -17,12 +18,24 @@ jobs:
         with:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.DIR }}
-      - name: move
+      - name: cv-en
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: ${{ env.FILE-ENG }}
+          working_directory: ${{ env.DIR }}
+      - name: move pt cv
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
-      - name: Upload pdf as artifact
+      - name: move en cv
+        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE-ENG }}.pdf ./github_artifacts/
+      - name: Upload pt pdf as artifact
         uses: actions/upload-artifact@v3
         with:
           name: ${{ env.FILE }}.pdf
+          path: ./github_artifacts
+      - name: Upload en pdf as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.FILE-ENG }}.pdf
           path: ./github_artifacts
   deploy:
     needs: [build]
