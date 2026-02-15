@@ -122,20 +122,79 @@
 \href{tel:+55063981133108}{\raisebox{-0.05\height}\faMobile \ 063 98113-3108} \ $|$ \
 \href{mailto:mateusrosario.me@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ mateusrosario.me@gmail.com} \\
 \\
-\href{https://mateusrosario.github.io/portfolio/}{\raisebox{-0.05\height} \ \faGlobe \ Meu Portifólio}
+\href{https://dev.mrosario.com.br/}{\raisebox{-0.05\height} \ \faGlobe \ Meu Site}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Sobre mim}
-Sou um \textbf{Cientista da Computação} apaixonado por desenvolvimento e programação. Estou em busca de oportunidades para aprender e crescer profissionalmente. Com 2 anos de experiência em \textbf{desenvolvimento FullStack}, trabalhei na construção de sistemas web e \textbf{aplicativos móveis} em todas as etapas, desde o planejamento até o pós-lançamento. Além disso, aprendi a tomar \textbf{decisões assertivas}, \textbf{organizar o trabalho}, \textbf{colaborar} e \textbf{liderar equipes}. Sou apaixonado por resolver problemas com programação e sempre me empenho em entregar experiências úteis e intuitivas para os usuários.
+\section{Resumo}
+Sou \textbf{Desenvolvedor Full Stack}, com mais de 4 anos
+de experiência em \textbf{engenharia de software}. Capaz de
+atuar com excelência em \textbf{backend} (Go, NestJS, Spring
+Boot), \textbf{frontend} (Angular, React, Next.js),
+\textbf{infraestrutura} (Docker, Nginx, Linux) e
+\textbf{arquitetura de microserviços}.
+Possuo um perfil de \textbf{liderança técnica e iniciativa},
+o que me permite identificar problemas, propor soluções e
+conduzi-las até a entrega. Liderei a modernização da
+infraestrutura on-premise de uma software house, migrando
+todo o ambiente para containers Docker (+30 containers),
+implementando proxy reverso com HTTPS e arquitetura de
+microserviços com processamento de 1.500 msgs/s.
+Tenho conhecimento em Go, TypeScript, Java, Angular, React,
+Next.js, Tailwind CSS, PostgreSQL, RabbitMQ, Redis, Docker,
+Keycloak (OAuth2), NestJS, Spring Boot e Electron.
 %----------------------------------------------------------------------------------------
 % Experience
 %----------------------------------------------------------------------------------------
 \section{Experiência}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Desenvolvedor Full Stack Pleno} & \hfill Jan. 2026 - Atualmente \\
+\textbf{- Viatech, Software House de Automação Comercial} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Liderança técnica em APIs RESTful com NestJS, TypeScript (strict) e TypeORM, aplicando princípios SOLID e mentorando desenvolvedores menos experientes (1 em produção, 2 em desenvolvimento);
+        \item[--] Desenvolvimento de microserviços em Go (FX, Ent): API de storage S3-compliant (SeaweedFS) com streaming, paralelismo e replicação; sistema de mensageria com RabbitMQ (publicador multi-tenant e consumidor processando 1.500 msgs/s); serviço Windows para gerenciamento de processos em background; serviço de backup automatizado com cron;
+        \item[--] Implantação de Keycloak (OAuth2) como provedor centralizado de autenticação, permitindo microserviços verdadeiramente desacoplados;
+        \item[--] Implementação de Redis para cache da EvolutionAPI (WhatsApp), reduzindo chamados por desconexão a zero;
+        \item[--] Desenvolvimento de portal de storage em Next.js com autenticação e separação de buckets públicos, internos e privados;
+        \item[--] Implantação de Wiki.js com MCP para documentação interna centralizada;
+        \item[--] Linguagens: Go, TypeScript, Java, JavaScript;
+        \item[--] Backend: NestJS, Spring Boot, TypeORM, Ent, FX, RabbitMQ, Redis;
+        \item[--] Frontend: Angular, React, Next.js, Tailwind CSS;
+        \item[--] Autenticação: Keycloak, OAuth2;
+        \item[--] Banco de dados: PostgreSQL.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Desenvolvedor Full Stack Junior} & \hfill Ago. 2023 - Dez. 2025 \\
+\textbf{- Viatech, Software House de Automação Comercial} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Modernização da infraestrutura on-premise: propôs e liderou a adoção de Docker, migrando toda a infraestrutura legada para containers em aproximadamente 1 ano (~12 serviços, +30 containers em produção);
+        \item[--] Avaliou Kubernetes on-premise como alternativa de orquestração (Rancher, Minikube), decidindo pragmaticamente por manter Docker Compose pela simplicidade e adequação ao contexto da equipe;
+        \item[--] Implementação de proxy reverso com Nginx Proxy Manager, certificados SSL (Let's Encrypt) e DNS, eliminando exposição direta de portas e garantindo conformidade com a LGPD (~10 serviços protegidos);
+        \item[--] Administração de servidores Linux (Fedora Server), automação de backup diário com replicação via SAMBA, scripts Bash e gerenciamento remoto via SSH;
+        \item[--] Introdução da linguagem Go no stack da empresa: serviço de migração de dados entre bancos (ERP para terminais PDVs com schemas JSON), scripts de automação compilados para Windows;
+        \item[--] Backend completo em Java (Spring Boot, Hibernate) para sistema multi-tenant de gestão de restaurantes com Server-Side Events para clientes desktop e mobile;
+        \item[--] Front-end complexo em Angular para ponto de vendas com gerenciamento de mesas/comandas, comunicação reativa entre terminais (RxJS), responsividade mobile e integração com Electron;
+        \item[--] Aplicações desktop com Electron (APIs para impressão, leitura de balança, parâmetros locais), instaladores com Inno Setup e build com WebPack;
+        \item[--] Linguagens: Go, TypeScript, Java, JavaScript;
+        \item[--] Infraestrutura: Docker, Nginx Proxy Manager, Fedora Server, SeaweedFS, SAMBA;
+        \item[--] Backend: NestJS, Spring Boot, Hibernate, TypeORM;
+        \item[--] Frontend: Angular, React, Tailwind CSS;
+        \item[--] Banco de dados: PostgreSQL.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Estágio - Desenvolvedor FullStack} & \hfill Out. 2020 - Nov. 2022 \\
@@ -213,22 +272,18 @@ Mateus da Silva Rosario. Avaliação dos algoritmos genéticos transgênico e ho
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item [--] \textbf{Aprendizagem rápida};
-        \item [--] Competência para \textbf{trabalho em equipe}, \textbf{liderança} e \textbf{resolução de problemas};
-        \item [--] Domínio e conhecimento pleno em \textbf{programação};
-        \item [--] Conhecimentos em arquitetura limpa, código limpo e \textbf{domínio de boas práticas};
-        \item [--] Experiência com frameworks de \textbf{desenvolvimento ágil (Scrum)};
-        \item [--] Domínio nas linguagens de programação \textbf{C, Pyhton, Java, JavaScript, TypeScript, Dart e Swift};
-        \item [--] Experiência com \textbf{desenvolvimento mobile} com \textbf{Flutter} e \textbf{SwiftUI}.
-        \item [--] Experiência com Banco de dados \textbf{SQL e NoSql} como \textbf{MySQL}, \textbf{Firebase} e \textbf{IBMCloud};
-        \item [--] Experiência com Backend em \textbf{Framework Django};
-        \item [--] Experiência e Domínio do \textbf{Framework Angular};
-        \item [--] Conhecimento e projetos com a biblioteca \textbf{React};
-        \item [--] Domínio e experiência com \textbf{HTML e CSS};
-        \item [--] Experiência com sistemas \textbf{Frontend e Backend} com comunicação por meio de\textbf{ APIs Resftfull};
-        \item [--] Experiência com \textbf{Git} e ferramentas relacionadas;
-        \item [--] Conhecimentos em \textbf{redes de computadores}.
-        \item [--] Conhecimentos em \textbf{Aprendizagem de Máquina} e \textbf{Inteligência Artificial}.
+        \item [--] \textbf{Iniciativa e convencimento}: Capacidade de identificar problemas, propor soluções e conduzir mudanças significativas (adoção de Docker, HTTPS, Go);
+        \item [--] \textbf{Liderança técnica}: Condução de desenvolvedores menos experientes, definição de padrões arquiteturais e mentoria sem cargo formal de liderança;
+        \item [--] \textbf{Autonomia e aprendizado autodidata}: Domínio de novas tecnologias (Go, administração Linux, Nginx, SeaweedFS, RabbitMQ) por iniciativa própria para resolver problemas reais;
+        \item [--] \textbf{Tomada de decisão técnica pragmática}: Capacidade de avaliar tecnologias e escolher soluções adequadas ao contexto (Kubernetes vs Docker Compose);
+        \item [--] \textbf{Documentação e padronização}: Criação de padrões de documentação (Wiki.js) e estilização (Tailwind CSS) para consistência em equipes;
+        \item [--] \textbf{Comunicação técnica}: Tradução de problemas técnicos (segurança, LGPD, containerização) para stakeholders não-técnicos;
+        \item [--] \textbf{Experiência com desenvolvimento ágil (Scrum)};
+        \item [--] Domínio em \textbf{Go}, \textbf{TypeScript}, \textbf{Java}, \textbf{JavaScript}, \textbf{Python};
+        \item [--] Expertise em \textbf{Angular}, \textbf{React}, \textbf{Next.js}, \textbf{NestJS}, \textbf{Spring Boot};
+        \item [--] Infraestrutura: \textbf{Docker}, \textbf{Nginx}, \textbf{Linux (Fedora Server)}, \textbf{RabbitMQ}, \textbf{Redis}, \textbf{SeaweedFS};
+        \item [--] Banco de dados: \textbf{PostgreSQL}, \textbf{MySQL};
+        \item [--] Autenticação e segurança: \textbf{Keycloak}, \textbf{OAuth2}, \textbf{SSL/TLS}.
     \end{itemize}
     \end{minipage}
 }
